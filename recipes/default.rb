@@ -2,6 +2,10 @@ include_recipe 'apt'
 
 package 'unattended-upgrades' 
 
+if node['unattended_upgrades']['send_email']
+    package 'mailutils'
+end
+
 template '/etc/apt/apt.conf.d/50unattended-upgrades' do
 	owner 'root'
 	group 'root'
