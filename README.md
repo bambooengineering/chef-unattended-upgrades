@@ -15,6 +15,9 @@ Simply include the recipe `unattended-upgrades`.
 
 In the default configuration, this recipe will perform daily security upgrades.
 
+If the `send_email` attribute is true, the `mailtools` package will be
+installed as well.
+
 Attributes
 ==========
 
@@ -26,3 +29,11 @@ Attributes
     The number of days between package list updates. Defaults to `1`.
  * node['unattended-upgrades']['upgrade_interval'] -
     The number of days between package upgrades. Defaults to `1`.
+ * node['unattended-upgrades']['send_email'] -
+    Whether email should be sent. Boolean.  Defaults to false.
+ * node['unattended-upgrades']['email_address'] -
+    Address for email reports. Defaults to "root@localhost".
+ * node['unattended-upgrades']['auto_remove'] -
+    Whether unneeded deps should be removed. Boolean.  Defaults to false.
+ * node['unattended-upgrades']['auto_reboot'] -
+    Whether required reboots should happen automatically. Boolean.  Defaults to false.
