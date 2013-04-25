@@ -1,6 +1,6 @@
 // Automatically upgrade packages from these (origin, archive) pairs
 Unattended-Upgrade::Allowed-Origins {    
-  <% node['unattended_upgrades']['origins'].each do |origin| %>
+  <% node['unattended-upgrades']['origins'].each do |origin| %>
   "<%= origin %>";
   <% end %>
 };
@@ -17,12 +17,12 @@ Unattended-Upgrade::Package-Blacklist {
 // If empty or unset then no email is sent, make sure that you 
 // have a working mail setup on your system. The package 'mailx'
 // must be installed or anything that provides /usr/bin/mail.
-<%= node['unattended_upgrades']['send_email'] ? "" : "// " %>Unattended-Upgrade::Mail "<%= node['unattended_upgrades']['email_address'] %>";
+<%= node['unattended-upgrades']['send_email'] ? "" : "// " %>Unattended-Upgrade::Mail "<%= node['unattended_upgrades']['email_address'] %>";
 
 // Do automatic removal of new unused dependencies after the upgrade
 // (equivalent to apt-get autoremove)
-Unattended-Upgrade::Remove-Unused-Dependencies "<%= node['unattended_upgrades']['auto_remove'] ? "true" : "false" %>";
+Unattended-Upgrade::Remove-Unused-Dependencies "<%= node['unattended-upgrades']['auto_remove'] ? "true" : "false" %>";
 
 // Automatically reboot *WITHOUT CONFIRMATION* if a 
 // the file /var/run/reboot-required is found after the upgrade 
-Unattended-Upgrade::Automatic-Reboot "<%= node['unattended_upgrades']['auto_reboot'] ? "true" : "false" %>";
+Unattended-Upgrade::Automatic-Reboot "<%= node['unattended-upgrades']['auto_reboot'] ? "true" : "false" %>";
