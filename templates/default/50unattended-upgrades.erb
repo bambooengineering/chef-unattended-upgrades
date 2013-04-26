@@ -17,7 +17,7 @@ Unattended-Upgrade::Package-Blacklist {
 // If empty or unset then no email is sent, make sure that you 
 // have a working mail setup on your system. The package 'mailx'
 // must be installed or anything that provides /usr/bin/mail.
-<%= node['unattended-upgrades']['send_email'] ? "" : "// " %>Unattended-Upgrade::Mail "<%= node['unattended_upgrades']['email_address'] %>";
+<%= node['unattended-upgrades']['send_email'] ? "" : "// " %>Unattended-Upgrade::Mail "<%= node['unattended-upgrades']['email_address'] %>";
 
 // Do automatic removal of new unused dependencies after the upgrade
 // (equivalent to apt-get autoremove)
