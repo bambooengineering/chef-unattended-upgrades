@@ -13,6 +13,6 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = ["..", "cookbooks"]
     chef.log_level      = :debug
 
-    chef.add_recipe     "chef-unattended-upgrades"
+    chef.add_recipe     "unattended-upgrades"
   end
 end
