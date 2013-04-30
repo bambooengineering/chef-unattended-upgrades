@@ -1,5 +1,3 @@
-include_recipe 'apt'
-
 package 'unattended-upgrades' 
 
 if node['unattended-upgrades']['send_email']

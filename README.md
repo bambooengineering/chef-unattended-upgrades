@@ -1,12 +1,12 @@
-chef-unattended-upgrades
-========================
+unattended-upgrades
+===================
 
-Chef cookbook for installing and configuring the unattended-upgrades package on Ubuntu
+Chef cookbook for installing and configuring the unattended-upgrades package on Debian based systems.
 
 Requirements
 ============
 
-Requires Ubuntu and the `apt` package. Only tested on 12.04 LTS.
+Should work on any Debian based distribution. Tested on Ubuntu 12.04 LTS and Debian 6.0 squeeze.
 
 Usage
 =====
