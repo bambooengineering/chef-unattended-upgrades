@@ -6,7 +6,7 @@ Chef cookbook for installing and configuring the unattended-upgrades package on 
 Requirements
 ============
 
-Requires Ubuntu and the `apt` package. Only tested on 12.04 LTS.
+Requires Ubuntu. Only tested on 12.04 LTS.
 
 Usage
 =====
