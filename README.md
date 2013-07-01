@@ -37,3 +37,5 @@ Attributes
     Whether unneeded deps should be removed. Boolean.  Defaults to false.
  * node['unattended-upgrades']['auto_reboot'] -
     Whether required reboots should happen automatically. Boolean.  Defaults to false.
+ * node['unattended-upgrades']['blacklist'] -
+    An array containing package names that should never be automatically upgraded. 

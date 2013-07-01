@@ -7,10 +7,9 @@ Unattended-Upgrade::Allowed-Origins {
 
 // List of packages to not update
 Unattended-Upgrade::Package-Blacklist {
-//  "vim";
-//  "libc6";
-//  "libc6-dev";
-//  "libc6-i686";
+  <% node['unattended-upgrades']['blacklist'].each do |blacklisted| %>
+  "<%= blacklisted %>";
+  <% end %>
 };
 
 // Send email to this address for problems or packages upgrades
