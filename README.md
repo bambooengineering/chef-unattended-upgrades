@@ -25,6 +25,8 @@ Attributes
     An array containing (origin,archive) pairs.  Controls where 
     packages can be installed from. Defaults to 
     `${distro_id} ${distro_codename}-security` 
+ * node['unattended-upgrades']['package-blacklist'] - 
+    An array containing the blacklisted packages for updates.
  * node['unattended-upgrades']['update_package_lists_interval'] -
     The number of days between package list updates. Defaults to `1`.
  * node['unattended-upgrades']['upgrade_interval'] -
