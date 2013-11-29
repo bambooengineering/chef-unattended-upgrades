@@ -1,6 +1,4 @@
-include_recipe 'apt'
-
-package 'unattended-upgrades' 
+package 'unattended-upgrades'
 
 if node['unattended-upgrades']['send_email']
     package 'mailutils'
