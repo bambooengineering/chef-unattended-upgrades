@@ -1,3 +1,4 @@
+name              "unattended-upgrades"
 maintainer        "First Banco"
 maintainer_email  "rob@firstbanco.com"
 license           "Apache 2.0"
