@@ -11,7 +11,9 @@ Requires Ubuntu and the `apt` package. Only tested on 12.04 LTS.
 Usage
 =====
 
-Simply include the recipe `unattended-upgrades`.
+Simply include the recipe `chef-unattended-upgrades` or use:
+    
+    cookbook cb, :git => "git@github.com:firstbanco/chef-unattended-upgrades"
 
 In the default configuration, this recipe will perform daily security upgrades.
 
