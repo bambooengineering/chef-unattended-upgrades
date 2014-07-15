@@ -5,3 +5,4 @@ default['unattended-upgrades']['send_email'] = false
 default['unattended-upgrades']['email_address'] = "root@localhost"
 default['unattended-upgrades']['auto_remove'] = false
 default['unattended-upgrades']['auto_reboot'] = false
+default['unattended-upgrades']['blacklist'] = []
