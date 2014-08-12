@@ -31,6 +31,8 @@ Attributes
     The number of days between package list updates. Defaults to `1`.
  * node['unattended-upgrades']['upgrade_interval'] -
     The number of days between package upgrades. Defaults to `1`.
+ * node['unattended-upgrades']['autoclean_interval'] -
+    The number of days between local download cache cleanups. Defaults to `7`.
  * node['unattended-upgrades']['send_email'] -
     Whether email should be sent. Boolean.  Defaults to false.
  * node['unattended-upgrades']['email_address'] -
